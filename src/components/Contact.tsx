@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import { Mail, ArrowUpRight, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import LegalOverlay from "./LegalOverlay";
+import Magnetic from "./Magnetic";
 
 export default function Contact() {
   const [legalOpen, setLegalOpen] = useState<{type: 'privacy' | 'terms' | null}>({ type: null });
@@ -61,6 +62,21 @@ export default function Contact() {
                   <p className="text-lg font-display">+91 7219002349</p>
                 </div>
               </a>
+
+              <div className="pt-8 border-t border-white/5">
+                <p className="font-mono text-[10px] uppercase text-neon-blue tracking-widest mb-4">Prefer a direct call?</p>
+                <Magnetic>
+                  <a 
+                    href="https://calendly.com" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-2xl font-display font-bold hover:bg-white hover:text-black transition-all group"
+                  >
+                    <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    Book a Strategy Session
+                  </a>
+                </Magnetic>
+              </div>
             </div>
           </div>
 
@@ -113,6 +129,7 @@ export default function Contact() {
                     <option value="web-dev">Web Development</option>
                     <option value="design">Design</option>
                     <option value="webapps">Webapps & SaaS</option>
+                    <option value="subscription">Subscription / Retainer</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -127,15 +144,17 @@ export default function Contact() {
                   className="w-full bg-black/40 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-neon-blue transition-colors font-sans text-sm resize-none"
                 />
               </div>
-              <motion.button 
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="submit"
-                className="w-full py-4 bg-white text-black rounded-2xl font-display font-bold flex items-center justify-center gap-3 hover:bg-neon-blue transition-colors"
-              >
-                <Send className="h-4 w-4" />
-                Send Message
-              </motion.button>
+              <Magnetic>
+                <motion.button 
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit"
+                  className="w-full py-4 bg-white text-black rounded-2xl font-display font-bold flex items-center justify-center gap-3 hover:bg-neon-blue transition-colors"
+                >
+                  <Send className="h-4 w-4" />
+                  Send Message
+                </motion.button>
+              </Magnetic>
             </form>
           </motion.div>
         </div>

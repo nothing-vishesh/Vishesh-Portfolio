@@ -31,6 +31,30 @@ const testimonials = [
     name: "Elena Rossi",
     role: "Marketing Manager, E-commerce Group",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    quote: "The custom SaaS dashboard Vishesh developed has streamlined our entire client onboarding. It's rare to find someone who understands both code and growth marketing so deeply.",
+    name: "David Chen",
+    role: "COO, Fintech Solutions",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    quote: "We struggled with Google Ads for years until we brought Vishesh on board. Our ROAS went from 1.8x to 4.5x in just a single quarter. Absolute professional.",
+    name: "Priya Sharma",
+    role: "Marketing Head, Lifestyle Brand",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    quote: "Vishesh doesn't just build websites; he builds conversion engines. Our landing page conversion rate jumped from 3% to nearly 9% after his redesign.",
+    name: "Marcus Thorne",
+    role: "E-com Entrepreneur",
+    image: "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    quote: "His ability to automate lead follow-ups via AI has saved us countless hours and significantly improved our booking rate. He's a true technical polymath.",
+    name: "Ananya Iyer",
+    role: "Global Sales Lead, Tech Corp",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop"
   }
 ];
 

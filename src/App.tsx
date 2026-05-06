@@ -9,7 +9,9 @@ import ProjectGrid from "./components/ProjectGrid";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
+import Onboarding from "./components/Onboarding";
 import ThreeCanvas from "./components/ThreeCanvas";
 import { motion, useScroll, useSpring } from "motion/react";
 
@@ -24,6 +26,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen selection:bg-neon-blue selection:text-black">
       <div className="noise" />
+      <Onboarding />
       <ThreeCanvas />
       
       {/* Progress Bar */}
@@ -39,6 +42,7 @@ export default function App() {
         <About />
         <Experience />
         <Testimonials />
+        <Pricing />
         <ProjectGrid />
       </main>
 
