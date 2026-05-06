@@ -67,7 +67,7 @@ export default function Contact() {
                 <p className="font-mono text-[10px] uppercase text-neon-blue tracking-widest mb-4">Prefer a direct call?</p>
                 <Magnetic>
                   <a 
-                    href="https://calendly.com" 
+                    href="https://calendar.app.google/eSwTgY9cTt9bYrLp7" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-2xl font-display font-bold hover:bg-white hover:text-black transition-all group"

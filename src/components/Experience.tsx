@@ -30,10 +30,10 @@ const experiences = [
   },
   {
     company: "Self-Employed",
-    role: "Freelance Digital Marketer",
+    role: "Freelancer",
     period: "2021 – Present",
     location: "Remote",
-    description: "Delivered SEO, Google Ads, and Meta Ads campaigns for national and international clients across e-commerce and gaming."
+    description: "Executing high-impact projects across digital strategy, brand identity, and performance growth for a diverse portfolio of international clients."
   }
 ];
 

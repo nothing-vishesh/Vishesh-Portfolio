@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { motion } from "motion/react";
-import { Check, Zap, Sparkles, Rocket, Calendar, Users, TrendingUp } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import { Check, Zap, Sparkles, Rocket, Calendar, Users, TrendingUp, Info } from "lucide-react";
 import Magnetic from "./Magnetic";
+import { useState } from "react";
 
 const benefits = [
   {
@@ -72,6 +73,8 @@ const plans = [
 ];
 
 export default function Pricing() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section id="pricing" className="py-24 px-8 max-w-7xl mx-auto border-t border-white/5">
       <div className="flex flex-col mb-16 items-center text-center">
@@ -134,11 +137,33 @@ export default function Pricing() {
               </p>
             </div>
 
-            <div className="mb-8 p-4 bg-white/5 rounded-2xl border border-white/5">
+            <div className="mb-8 p-4 bg-white/5 rounded-2xl border border-white/5 flex items-center justify-between group/price cursor-help relative">
               <div className="flex items-baseline gap-1">
                 <span className="text-3xl font-bold font-display">{plan.price}</span>
                 <span className="text-xs text-white/30 font-mono uppercase tracking-widest">{plan.period}</span>
               </div>
+              <div 
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className="text-white/20 group-hover/price:text-neon-blue transition-colors"
+                title="Personalized quotes provided upon inquiry"
+              >
+                <Info className="h-4 w-4" />
+              </div>
+
+              <AnimatePresence>
+                {hoveredIndex === i && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 5, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 5, scale: 0.95 }}
+                    className="absolute bottom-full left-0 right-0 mb-2 p-3 bg-white text-black rounded-xl text-[10px] font-mono uppercase tracking-wider leading-relaxed text-center shadow-2xl z-20"
+                  >
+                    Personalized quotes are provided upon inquiry based on your specific requirements.
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white" />
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
 
             <ul className="space-y-4 mb-12 flex-grow">
