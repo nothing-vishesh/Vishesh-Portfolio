@@ -142,19 +142,15 @@ export default function About() {
   return (
     <section id="about" className="py-24 px-8 max-w-7xl mx-auto border-t border-white/5 relative">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-        <div className="lg:col-span-4 relative">
-          <motion.div
-             initial={{ opacity: 0, scale: 0.9 }}
-             whileInView={{ opacity: 1, scale: 1 }}
-             transition={{ duration: 1 }}
-             className="aspect-square w-full max-w-sm mx-auto rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-white/10"
-          >
-            <div 
-              className="h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop')` }}
-            />
-          </motion.div>
-          <div className="absolute -bottom-6 -right-6 h-32 w-32 bg-neon-purple rounded-full blur-[80px] opacity-20" />
+        <div className="lg:col-span-4 relative flex items-center justify-center">
+          <div className="absolute inset-0 bg-neon-purple rounded-full blur-[120px] opacity-10 animate-pulse" />
+          <div className="relative z-10 p-8 rounded-full border border-white/5 bg-white/[0.02] backdrop-blur-sm">
+            <div className="h-48 w-48 rounded-full border border-white/10 flex items-center justify-center overflow-hidden">
+              <div className="h-full w-full bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 flex items-center justify-center">
+                <Globe className="h-20 w-20 text-white/10" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="lg:col-span-8 flex flex-col justify-center h-full">
@@ -190,7 +186,7 @@ export default function About() {
           <div className="mt-12 flex flex-wrap gap-12">
             {[
               { label: "Experience", value: "4+ Years" },
-              { label: "Converstion Uplift", value: "35%+" },
+              { label: "Conversion Uplift", value: "35%+" },
               { label: "Team Size", value: "25+" }
             ].map((stat, i) => (
               <motion.div 
