@@ -201,7 +201,7 @@ export default function About() {
             ))}
           </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-8 border-t border-white/5 pt-12">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-white/5 pt-12">
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Technical Stack</h4>
               <ul className="space-y-2 text-xs text-white/60">

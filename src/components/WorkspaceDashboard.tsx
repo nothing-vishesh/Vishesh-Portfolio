@@ -163,14 +163,14 @@ export default function WorkspaceDashboard() {
   }, [activeTab]);
 
   return (
-    <section id="workspace" className="py-24 px-8 max-w-7xl mx-auto border-t border-white/5 relative overflow-hidden">
+    <section id="workspace" className="py-16 md:py-24 px-6 md:px-8 max-w-7xl mx-auto border-t border-white/5 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-full bg-neon-blue/5 rounded-full blur-[160px] opacity-20 pointer-events-none" />
 
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 relative z-10">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8 relative z-10">
         <div className="text-center md:text-left">
           <p className="font-mono text-neon-blue text-xs uppercase tracking-[0.2em] mb-4">Integration</p>
-          <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tighter">
+          <h2 className="font-display text-4xl md:text-7xl font-bold tracking-tighter">
             Workspace <span className="text-white/20 italic">Portal</span>
           </h2>
         </div>
@@ -186,16 +186,16 @@ export default function WorkspaceDashboard() {
         )}
       </div>
 
-      <div className="relative z-10 bg-white/[0.02] border border-white/10 rounded-[40px] p-8 md:p-12 backdrop-blur-xl min-h-[500px] flex flex-col">
+      <div className="relative z-10 bg-white/[0.02] border border-white/10 rounded-[32px] md:rounded-[40px] p-6 md:p-12 backdrop-blur-xl min-h-[500px] flex flex-col">
         {!user ? (
-          <div className="flex-1 flex flex-col items-center justify-center text-center max-w-md mx-auto space-y-8 py-12">
-            <div className="h-20 w-20 rounded-3xl bg-neon-blue/10 border border-neon-blue/20 flex items-center justify-center animate-pulse">
-              <ShieldCheck className="h-10 w-10 text-neon-blue" />
+          <div className="flex-1 flex flex-col items-center justify-center text-center max-w-md mx-auto space-y-8 py-12 px-4">
+            <div className="h-16 w-16 md:h-20 md:w-20 rounded-3xl bg-neon-blue/10 border border-neon-blue/20 flex items-center justify-center animate-pulse">
+              <ShieldCheck className="h-8 w-8 md:h-10 md:w-10 text-neon-blue" />
             </div>
             <div className="space-y-4">
-              <h3 className="text-2xl font-display font-bold">Secure Access Needed</h3>
+              <h3 className="text-xl md:text-2xl font-display font-bold">Secure Access Needed</h3>
               <p className="text-white/50 text-sm leading-relaxed">
-                Log in with your Google account to access your workspace tools directly from this portfolio. I use restricted scopes to ensure your data stays private.
+                Log in with your Google account to access your workspace tools directly from this portfolio.
               </p>
             </div>
             
@@ -220,7 +220,7 @@ export default function WorkspaceDashboard() {
         ) : (
           <>
             {/* Tabs */}
-            <div className="flex flex-wrap gap-2 p-1.5 bg-white/5 rounded-2xl w-fit mb-12">
+            <div className="flex flex-wrap gap-2 p-1.5 bg-white/5 rounded-2xl w-full md:w-fit mb-12">
               {[
                 { id: 'calendar', label: 'Calendar', icon: Calendar },
                 { id: 'gmail', label: 'Gmail', icon: Mail },
@@ -230,14 +230,14 @@ export default function WorkspaceDashboard() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id as any)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-display font-medium transition-all ${
+                  className={`flex-1 md:flex-none flex items-center justify-center md:justify-start gap-2 px-4 md:px-6 py-3 rounded-xl text-xs md:text-sm font-display font-medium transition-all ${
                     activeTab === tab.id 
                     ? 'bg-white text-black shadow-lg shadow-white/10' 
                     : 'text-white/40 hover:text-white hover:bg-white/5'
                   }`}
                 >
-                  <tab.icon className="h-4 w-4" />
-                  {tab.label}
+                  <tab.icon className="h-3 w-3 md:h-4 md:w-4" />
+                  <span className="hidden xs:inline">{tab.label}</span>
                 </button>
               ))}
             </div>
@@ -285,23 +285,23 @@ export default function WorkspaceDashboard() {
                     {activeTab === 'calendar' && (
                       <div className="grid gap-4">
                         <div className="flex justify-between items-center mb-4">
-                          <h4 className="text-xl font-display font-bold">Upcoming Agenda</h4>
-                          <span className="text-[10px] font-mono text-white/20 uppercase tracking-widest">Next 5 Events</span>
+                          <h4 className="text-lg md:text-xl font-display font-bold">Upcoming Agenda</h4>
+                          <span className="hidden sm:block text-[10px] font-mono text-white/20 uppercase tracking-widest">Next 5 Events</span>
                         </div>
                         {data?.items?.length > 0 ? data.items.map((event: any) => (
-                          <div key={event.id} className="group p-6 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all flex items-center justify-between">
-                            <div className="flex items-center gap-6">
-                              <div className="h-12 w-12 rounded-2xl bg-neon-blue/10 flex flex-col items-center justify-center border border-neon-blue/20">
-                                <span className="text-[10px] font-mono text-neon-blue uppercase">
+                          <div key={event.id} className="group p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all flex items-center justify-between">
+                            <div className="flex items-center gap-4 md:gap-6">
+                              <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl md:rounded-2xl bg-neon-blue/10 flex flex-col items-center justify-center border border-neon-blue/20">
+                                <span className="text-[8px] md:text-[10px] font-mono text-neon-blue uppercase">
                                   {new Date(event.start.dateTime || event.start.date).toLocaleString('en-US', { month: 'short' })}
                                 </span>
-                                <span className="text-lg font-display font-bold text-white">
+                                <span className="text-sm md:text-lg font-display font-bold text-white">
                                   {new Date(event.start.dateTime || event.start.date).getDate()}
                                 </span>
                               </div>
                               <div>
-                                <h5 className="font-display font-bold group-hover:text-neon-blue transition-colors">{event.summary || '(No Title)'}</h5>
-                                <p className="text-xs text-white/40 font-mono mt-1 flex items-center gap-2">
+                                <h5 className="font-display font-bold text-sm md:text-base group-hover:text-neon-blue transition-colors line-clamp-1">{event.summary || '(No Title)'}</h5>
+                                <p className="text-[10px] md:text-xs text-white/40 font-mono mt-1 flex items-center gap-2">
                                   <Clock className="h-3 w-3" />
                                   {new Date(event.start.dateTime || event.start.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                 </p>
@@ -318,23 +318,23 @@ export default function WorkspaceDashboard() {
                     {activeTab === 'gmail' && (
                       <div className="grid gap-4">
                         <div className="flex justify-between items-center mb-4">
-                          <h4 className="text-xl font-display font-bold">Recent Communications</h4>
-                          <span className="text-[10px] font-mono text-white/20 uppercase tracking-widest">latest Threads</span>
+                          <h4 className="text-lg md:text-xl font-display font-bold">Recent Communications</h4>
+                          <span className="hidden sm:block text-[10px] font-mono text-white/20 uppercase tracking-widest">latest Threads</span>
                         </div>
                         {data?.length > 0 ? data.map((msg: any) => (
-                          <div key={msg.id} className="group p-6 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all">
+                          <div key={msg.id} className="group p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all">
                             <div className="flex justify-between items-start mb-2">
                               <span className="text-[8px] font-mono uppercase tracking-[0.2em] px-2 py-1 rounded bg-white/5 text-white/40">
                                 {msg.labelIds?.includes('INBOX') ? 'Inbox' : 'Sent'}
                               </span>
-                              <span className="text-[10px] font-mono text-white/20 italic">
+                              <span className="text-[8px] md:text-[10px] font-mono text-white/20 italic">
                                 {new Date(parseInt(msg.internalDate)).toLocaleDateString()}
                               </span>
                             </div>
-                            <h5 className="font-display font-bold group-hover:text-neon-blue transition-colors truncate max-w-lg">
+                            <h5 className="font-display font-bold text-sm md:text-base group-hover:text-neon-blue transition-colors truncate max-w-[200px] xs:max-w-xs md:max-w-lg">
                               {msg.payload.headers.find((h: any) => h.name === 'Subject')?.value || '(No Subject)'}
                             </h5>
-                            <p className="text-xs text-white/40 font-sans mt-2 line-clamp-1">{msg.snippet}</p>
+                            <p className="text-[10px] md:text-xs text-white/40 font-sans mt-2 line-clamp-1">{msg.snippet}</p>
                           </div>
                         )) : (
                           <p className="text-white/20 text-center py-12 font-mono text-xs italic">No messages found.</p>
