@@ -7,6 +7,38 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app, firebaseConfig.projectId);
 export const googleProvider = new GoogleAuthProvider();
+googleProvider.addScope('https://www.googleapis.com/auth/calendar.events');
+googleProvider.addScope('https://www.googleapis.com/auth/gmail.readonly');
+googleProvider.addScope('https://www.googleapis.com/auth/meetings.space.created');
+googleProvider.addScope('https://www.googleapis.com/auth/spreadsheets');
+
+let cachedAccessToken: string | null = null;
+let isSigningIn = false;
+
+export const googleSignIn = async () => {
+  try {
+    isSigningIn = true;
+    const result = await signInWithPopup(auth, googleProvider);
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    if (!credential?.accessToken) {
+      throw new Error('Failed to get access token');
+    }
+    cachedAccessToken = credential.accessToken;
+    return { user: result.user, accessToken: cachedAccessToken };
+  } catch (error) {
+    console.error('Sign in error:', error);
+    throw error;
+  } finally {
+    isSigningIn = false;
+  }
+};
+
+export const getAccessToken = () => cachedAccessToken;
+
+export const logout = async () => {
+  await signOut(auth);
+  cachedAccessToken = null;
+};
 
 export enum OperationType {
   CREATE = 'create',
