@@ -211,12 +211,12 @@ export default function Contact() {
           </div>
           
           <div className="flex items-center gap-8 font-mono text-[10px] uppercase text-white/30 tracking-widest">
-            <span>Mumbai, Maharashtra, India</span>
+            <span>Vasai-Virar, Maharashtra, India</span>
           </div>
 
           <div className="font-display text-sm font-bold flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-neon-blue" />
-            MUMBAI, IN
+            VASAI-VIRAR, IN
           </div>
         </div>
       </div>

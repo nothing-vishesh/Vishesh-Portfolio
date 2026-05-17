@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="font-mono text-xs uppercase tracking-[0.4em] text-white/40 mb-8"
         >
-          Performance Marketer | Brand Builder | AI Specialist
+          Performance Marketer | Brand Builder | SEO & Paid Media
         </motion.p>
         
         <h1 className="font-display text-[clamp(3rem,12vw,10rem)] leading-[0.85] font-bold tracking-tighter uppercase mb-8">
@@ -54,7 +54,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="block"
           >
-            Growth
+            Performance
           </motion.span>
           <motion.span 
             initial={{ y: 100, opacity: 0 }}
@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="block text-white/10 italic"
           >
-            Architect
+            Strategist
           </motion.span>
         </h1>
 
@@ -73,8 +73,8 @@ export default function Hero() {
           transition={{ delay: 1.2, duration: 1 }}
           className="flex flex-col md:flex-row md:items-center gap-8 md:gap-24"
         >
-          <p className="max-w-xs text-white/50 font-sans text-sm leading-relaxed">
-            Helping brands scale through data-driven performance marketing, SEO, and AI-powered content automation.
+          <p className="max-w-sm text-white/50 font-sans text-sm leading-relaxed">
+            4+ years of driving growth through data-driven performance marketing, high-impact SEO, and AI-powered content automation.
           </p>
           
           <div className="flex flex-wrap gap-8 md:gap-12 border-l border-white/10 pl-8">
@@ -84,7 +84,7 @@ export default function Hero() {
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase text-white/40 tracking-widest mb-1">Location</p>
-              <p className="text-xs font-display">Mumbai, MH, IN</p>
+              <p className="text-xs font-display">Vasai-Virar, MH, IN</p>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase text-white/40 tracking-widest mb-1">CV</p>

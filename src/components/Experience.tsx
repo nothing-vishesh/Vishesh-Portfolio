@@ -12,28 +12,35 @@ const experiences = [
     role: "Founder & Performance Marketing Lead",
     period: "Nov 2025 – Present",
     location: "Mumbai",
-    description: "Founded a performance branding agency serving real estate, D2C startups, and local businesses. Executed end-to-end Google Ads, Meta Ads, and SEO strategies."
+    description: "Founded a performance branding agency serving real estate, D2C startups, and local businesses. Executing end-to-end Google Ads, Meta Ads, and SEO strategies driving measurable client revenue. Managing AI-powered content workflows to scale production."
   },
   {
     company: "Steez Closet",
     role: "E-commerce Brand Strategist",
     period: "Sep 2024 – Mar 2025",
     location: "Remote",
-    description: "Built the merchandise brand from scratch including naming, logo, and visual identity. Launched a complete Shopify store with optimized UX."
+    description: "Built the merchandise brand entirely from scratch — naming, logo, visual identity. Developed and launched a complete Shopify store with optimized UX, executing ROI-focused Facebook and Google Ads campaigns from zero to a live revenue-generating brand."
   },
   {
     company: "AVA LifeSpace & Dream India Builders",
     role: "Team Leader – Real Estate Telecalling",
     period: "Aug 2022 – Mar 2025",
     location: "On-site",
-    description: "Led a team of 25+ telecallers, driving lead generation and achieving a 35% increase in conversion rates within 6 months."
+    description: "Led a team of 25+ telecallers across multiple real estate projects. Achieved a 35% increase in conversion rates within 6 months through targeted training and script optimization. Maintained detailed performance reports for management."
+  },
+  {
+    company: "TNQ (BPO)",
+    role: "Product Trainer – SBI Life Insurance",
+    period: "6 Months",
+    location: "On-site",
+    description: "Trained BPO sales agents on SBI Life Insurance products, policies, and sales scripts within a structured telecalling environment. Conducted onboarding and product knowledge sessions, ensuring agents were proficient in insurance terminology."
   },
   {
     company: "Self-Employed",
     role: "Freelancer",
     period: "2021 – Present",
     location: "Remote",
-    description: "Executing high-impact projects across digital strategy, brand identity, and performance growth for a diverse portfolio of international clients."
+    description: "Delivering SEO, Google Ads, and Meta Ads campaigns for international clients across e-commerce, gaming, and tech. Grew a 40K+ subscriber gaming YouTube channel through AI-powered content automation and strategy."
   }
 ];
 

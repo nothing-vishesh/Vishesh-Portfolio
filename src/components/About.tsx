@@ -176,10 +176,10 @@ export default function About() {
             className="space-y-6 text-white/70 text-lg leading-relaxed font-sans max-w-xl"
           >
             <p>
-              I am a results-driven performance marketer and brand builder with 4+ years of hands-on experience in digital marketing, paid media, and SEO.
+              I am a results-driven performance marketer and brand builder with 4+ years of hands-on experience in digital marketing, paid media (Google Ads, Meta Ads), SEO, and brand development.
             </p>
             <p>
-              As the founder of BRANDStack Media, I specialize in building brand identities from scratch and executing full-funnel paid campaigns that deliver measurable growth for national and international clients.
+              As the founder of BRANDStack Media, I specialize in building brand identities from scratch and executing full-funnel paid campaigns. I have a proven track record of managing national and international clients and delivering measurable ROI across digital channels.
             </p>
           </motion.div>
 
@@ -203,20 +203,21 @@ export default function About() {
 
           <div className="mt-12 grid grid-cols-2 gap-8 border-t border-white/5 pt-12">
             <div>
-              <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-1">Core Strengths</h4>
-              <ul className="space-y-1 text-sm text-white/60">
-                <li>Performance Marketing (Meta/Google)</li>
-                <li>Advanced SEO & Analytics</li>
-                <li>AI & Automation Workflows</li>
-                <li>E-commerce Strategy (Shopify)</li>
+              <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Technical Stack</h4>
+              <ul className="space-y-2 text-xs text-white/60">
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Paid Media: Google/Meta Ads</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> SEO: Search Console & Analytics</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Web: WordPress, Shopify, Elementor</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> AI: Prompt Engineering & Automation</li>
               </ul>
             </div>
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Certifications</h4>
-              <ul className="space-y-2 text-sm text-white/60">
-                <li>Google Analytics (2025)</li>
-                <li>AI Tools Workshop (2025)</li>
-                <li>Digital Marketing Fundamentals</li>
+              <ul className="space-y-2 text-xs text-white/60">
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Google Analytics (2025)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> AI Tools Workshop (2025)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Digital Marketing Fundamentals</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Intro to AI (2024)</li>
               </ul>
             </div>
           </div>
