@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowRight, Globe, Zap, Target, X, CheckCircle2, TrendingUp, BarChart3 } from "lucide-react";
+import { ArrowRight, Globe, Zap, Target, X, CheckCircle2, TrendingUp, BarChart3, Sparkles } from "lucide-react";
 import Magnetic from "./Magnetic";
 
 const CaseStudySkeleton = () => (
@@ -125,6 +125,21 @@ const caseStudies: CaseStudy[] = [
         "Built a global brand presence with 500k+ students globally"
       ]
     }
+  },
+  {
+    title: "GraphicsWalah Brand",
+    metric: "100+ Custom Assets",
+    desc: "Bespoke digital design system including vector logomark variants, typography rulesets, and streetwear T-shirt concepts.",
+    icon: <Sparkles className="h-4 w-4 text-white" />,
+    fullStory: {
+      challenge: "The client needed to establish an edgy, premium apparel brand, demanding illustrative streetwear designs and dynamic social assets that captivate viewers with high visual standard.",
+      action: "Applying prompt engineered design models and high-quality vector suites, I created bespoke visual concepts, custom logomarks, and automated rendering pipelines.",
+      result: [
+        "Delivered a comprehensive vector graphics manual with 100+ production-ready assets",
+        "Designed popular streetwear T-shirt variants and brand aesthetics",
+        "Established the tagline: 'Think what you want, I will make it in reality'"
+      ]
+    }
   }
 ];
 
@@ -205,10 +220,10 @@ export default function About() {
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Technical Stack</h4>
               <ul className="space-y-2 text-xs text-white/60">
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Analytics: Excel, Google Analytics, Dashboards</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Analytics: Excel, Google Analytics, KPI Dashboards</li>
                 <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Paid Media: Google Ads, Meta Ads, A/B Testing</li>
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Web: React, WordPress, Shopify, Elementor</li>
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> AI: Prompt Engineering & Workflow Automation</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Web & Design: React, WordPress, Shopify, Photoshop, Illustrator, Canva</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> AI & Video: Prompt Engineering, Premiere Pro, CapCut, Automation Workflows</li>
               </ul>
             </div>
             <div>

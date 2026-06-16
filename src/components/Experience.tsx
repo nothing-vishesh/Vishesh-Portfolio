@@ -15,6 +15,13 @@ const experiences = [
     description: "Founded a full-service digital growth agency serving real estate, D2C startups, and local businesses across Mumbai. Directing Google/Meta Ads architectures, brand identity generation, e-commerce landing pages, client reporting dashboards, and AI-powered content production workflows reducing turnaround by 60%."
   },
   {
+    company: "Graphics Walah",
+    role: "Lead Graphic & Brand Designer",
+    period: "2021 – Present",
+    location: "Remote",
+    description: "Operating a dynamic visual brand identity studio. Designing custom streetwear apparel collections, bespoke vector logomarks, typographies, and premium social media edits/reels under the commitment: 'Think what you want, I will make it in reality'."
+  },
+  {
     company: "EPIC Insurance Brokers & Consultants",
     role: "Quality Analyst",
     period: "May 2025 – Dec 2025",
