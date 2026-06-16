@@ -195,7 +195,7 @@ export default function Contact() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-8">
           <div className="flex items-center gap-12 font-mono text-[10px] uppercase text-white/30 tracking-widest">
-            <span>© 2025 Vishesh Jaiswal</span>
+            <span>© 2026 Vishesh Jaiswal</span>
             <button 
               onClick={() => setLegalOpen({ type: 'privacy' })}
               className="hover:text-white transition-colors"

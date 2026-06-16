@@ -176,16 +176,16 @@ export default function About() {
             className="space-y-6 text-white/70 text-lg leading-relaxed font-sans max-w-xl"
           >
             <p>
-              I am a results-driven performance marketer and brand builder with 4+ years of hands-on experience in digital marketing, paid media (Google Ads, Meta Ads), SEO, and brand development.
+              I am a results-driven professional with 5+ years of experience spanning data analytics, digital marketing, and operations. Over my career, I've designed interactive data dashboards, handled advanced MIS reporting, and managed high-impact SEO and ROI-focused paid campaigns.
             </p>
             <p>
-              As the founder of BRANDStack Media, I specialize in building brand identities from scratch and executing full-funnel paid campaigns. I have a proven track record of managing national and international clients and delivering measurable ROI across digital channels.
+              As the founder of BRANDStack Media, I specialize in building brand identities from scratch and executing full-funnel paid campaigns. I have a proven track record of managing clients across real estate, D2C, and e-commerce, while streamlining workflows using AI-powered automation.
             </p>
           </motion.div>
 
           <div className="mt-12 flex flex-wrap gap-12">
             {[
-              { label: "Experience", value: "4+ Years" },
+              { label: "Experience", value: "5+ Years" },
               { label: "Conversion Uplift", value: "35%+" },
               { label: "Team Size", value: "25+" }
             ].map((stat, i) => (
@@ -205,19 +205,20 @@ export default function About() {
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Technical Stack</h4>
               <ul className="space-y-2 text-xs text-white/60">
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Paid Media: Google/Meta Ads</li>
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> SEO: Search Console & Analytics</li>
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Web: WordPress, Shopify, Elementor</li>
-                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> AI: Prompt Engineering & Automation</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Analytics: Excel, Google Analytics, Dashboards</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Paid Media: Google Ads, Meta Ads, A/B Testing</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> Web: React, WordPress, Shopify, Elementor</li>
+                <li className="flex items-center gap-2"><div className="h-1 w-1 bg-neon-blue rounded-full" /> AI: Prompt Engineering & Workflow Automation</li>
               </ul>
             </div>
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Certifications</h4>
               <ul className="space-y-2 text-xs text-white/60">
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Google Analytics (2025)</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> AI Tools Workshop (2025)</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Digital Marketing Fundamentals</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Intro to AI (2024)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Deloitte Data Analytics (Forage, 2026)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Google Analytics (Google Skillshop, 2025)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> AI Tools Workshop (ULSA, 2025)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Intro to AI (Great Learning, 2024)</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="h-3 w-3 text-neon-purple" /> Digital Marketing Fundamentals (IIDE)</li>
               </ul>
             </div>
           </div>

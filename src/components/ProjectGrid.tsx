@@ -117,33 +117,33 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 const projects: Project[] = [
   {
     id: "1",
-    title: "AI Prompt Engineering",
-    description: "Designed an AI pipeline for gaming content creators, cutting video script and thumbnail production time by 60%.",
-    tags: ["AI Automation", "Prompt Engineering", "Strategy"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop",
+    title: "Deloitte Data Analytics Simulation",
+    description: "Built an interactive React.js performance & pay equality dashboard. Performed advanced analytics on compensation gaps and applied data storytelling using Excel pivot models.",
+    tags: ["Data Analytics", "React.js", "Excel Modeling"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
     link: "#"
   },
   {
     id: "2",
-    title: "Steez Closet",
-    description: "Built an e-commerce merchandise brand from scratch, including full visual identity and Shopify store development.",
-    tags: ["E-commerce", "Branding", "Shopify"],
-    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000&auto=format&fit=crop",
+    title: "AI Content Automation Pipeline",
+    description: "Designed a full prompt engineering pipeline to auto-generate video assets, scripts, and descriptions, growing a gaming channel to 40K+ subscribers and slashing production time by 60%.",
+    tags: ["AI Automation", "Prompt Engineering", "Growth"],
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop",
     link: "#"
   },
   {
     id: "3",
-    title: "Facebook Ads Lead Gen",
-    description: "Full-funnel Meta Ads campaign for a D2C fashion startup with A/B testing and audience targeting to maximize ROAS.",
-    tags: ["Paid Media", "Lead Gen", "Meta Ads"],
+    title: "Full-Funnel Meta Ads Campaign",
+    description: "Built and scaled a conversion-driven campaign for a fashion e-commerce startup with layered dynamic targeting and A/B continuous bid optimizations.",
+    tags: ["Paid Media", "Meta Ads", "Shopify"],
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2000&auto=format&fit=crop",
     link: "#"
   },
   {
     id: "4",
     title: "BRANDStack Media",
-    description: "Founder of a performance branding agency serving real estate, D2C startups, and international local businesses.",
-    tags: ["Agency", "Strategy", "Branding"],
+    description: "Led and scaled a full-service performance growth agency serving premium real estate developers, local startups, and e-commerce brands in Mumbai.",
+    tags: ["Strategy", "Branding", "Google Ads"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop",
     link: "#"
   }
@@ -174,7 +174,7 @@ export default function ProjectGrid() {
           whileInView={{ opacity: 1 }}
           className="font-mono text-xs text-white/40 text-right uppercase tracking-widest hidden md:block"
         >
-          Selected Projects / 2024-2025<br />
+          Selected Projects / 2024-2026<br />
           Volume 01
         </motion.div>
       </div>

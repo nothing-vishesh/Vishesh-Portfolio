@@ -117,7 +117,7 @@ export default function Navbar() {
             </div>
 
             <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-white/20 font-mono text-[10px] uppercase tracking-widest">
-              <span>© 2025 Vishesh Jaiswal</span>
+              <span>© 2026 Vishesh Jaiswal</span>
               <div className="flex gap-6">
                 <span>LI</span>
                 <span>TW</span>

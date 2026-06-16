@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="font-mono text-xs uppercase tracking-[0.4em] text-white/40 mb-8"
         >
-          Performance Marketer | Brand Builder | SEO & Paid Media
+          Data Analyst • MIS Executive • Performance Marketer • Agency Founder
         </motion.p>
         
         <h1 className="font-display text-[clamp(3rem,12vw,10rem)] leading-[0.85] font-bold tracking-tighter uppercase mb-8">
@@ -74,7 +74,7 @@ export default function Hero() {
           className="flex flex-col md:flex-row md:items-center gap-8 md:gap-24"
         >
           <p className="max-w-sm text-white/50 font-sans text-sm leading-relaxed">
-            4+ years of driving growth through data-driven performance marketing, high-impact SEO, and AI-powered content automation.
+            5+ years of experience spanning data analytics, digital marketing, and operations. Specialized in building dashboards, MIS reporting, and automation.
           </p>
           
           <div className="flex flex-wrap gap-8 md:gap-12 border-l border-white/10 pl-8">
@@ -105,7 +105,7 @@ export default function Hero() {
       <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-8 font-mono text-[10px] text-white/20 uppercase tracking-[0.5em] [writing-mode:vertical-lr]">
         <span>Scroll to explore</span>
         <div className="h-24 w-[1px] bg-white/10 mx-auto" />
-        <span>V.2025</span>
+        <span>V.2026</span>
       </div>
     </section>
   );
